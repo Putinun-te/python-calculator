@@ -11,33 +11,34 @@ class TestCalculator(unittest.TestCase):
 
     # Add the following test methods to the TestCalculator class:
 
-# Test cases for add()
+    #add
     def test_add_positive_numbers(self):
         self.assertEqual(self.calc.add(5, 3), 8)
 
     def test_add_negative_numbers(self):
         self.assertEqual(self.calc.add(-1, -2), -3)
 
-    # Test cases for subtract()
+    #subtract
     def test_subtract_positive_result(self):
         self.assertEqual(self.calc.subtract(5, 3), 2)
 
     def test_subtract_negative_result(self):
         self.assertEqual(self.calc.subtract(3, 5), -2)
 
-    # Test cases for multiply()
+    # multiply
     def test_multiply_positive_numbers(self):
         self.assertEqual(self.calc.multiply(3, 4), 12)
 
     def test_multiply_with_zero(self):
         self.assertEqual(self.calc.multiply(3, 0), 0)
 
-    # Test cases for divide()
+    #divide
     def test_divide_evenly_divisible(self):
         self.assertEqual(self.calc.divide(10, 2), 5)
 
     def test_divide_not_evenly_divisible(self):
         self.assertEqual(self.calc.divide(7, 3), 2)  # Expect integer division
+
 
     # Test case for divide by zero
     def test_divide_by_zero(self):
