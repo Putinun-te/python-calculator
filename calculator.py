@@ -13,7 +13,7 @@ class Calculator:
 
     def divide(self, a, b):
         if b == 0:
-            raise ValueError("Cannot divide by zero")  # checking for divider
+            raise ValueError("Cannot divide by zero")  # checking Divider
         result = 0
         while a >= b:  # edit from a > b
             a = self.subtract(a, b)
